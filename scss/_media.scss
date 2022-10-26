@@ -11,6 +11,26 @@
                 text-align: center;
                 justify-content: center;
             }
+
+            .formularioReserva {
+                display: flex;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                width: 100%;
+                margin-left: 0%;
+    
+                .datosReserva{
+                    width: 100%;
+                    padding: 25%;
+                }
+            }
+
+            .mapa{
+                max-width: 60%;
+                margin: 5%;
+            }
         }
         .centroTitulo{
             padding: 0;
@@ -27,8 +47,23 @@
         .row{
             align-items: center;
         }
+        // .formularioReserva {
+        //     display: flex;
+        //     text-align: center;
+        //     justify-content: center;
+        //     align-items: center;
+        //     flex-wrap: wrap;
+        //     width: 100%;
+        //     margin-left: 0%;
+
+        //     .datosReserva{
+        //         width: 100%;
+        //         padding: 25%;
+        //     }
+        //}
         .mapa{
-            max-width: 200px;
+            max-width: 60%;
+            margin: 5%;
         }
         
         

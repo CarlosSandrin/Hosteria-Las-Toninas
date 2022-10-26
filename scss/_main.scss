@@ -131,6 +131,22 @@ main {
 
   }
 
+  #formularioReserva {
+    border: solid;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .container .formularioReserva .datosReserva {
+    margin-top: 20px;
+    background: #24303c;
+    color: rgb(70, 69, 69);
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #b2c3e7;
+  }
+
   // .row{
   //   @include flex(row, auto, center, wrap);
   //   margin: 2;
