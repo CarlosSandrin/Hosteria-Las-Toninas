@@ -1,0 +1,209 @@
+main {
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
+  color: $texto;
+  overflow-x: hidden;
+
+  /* sacar flechas del input number:*/
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  input[type=number] {
+    -moz-appearance: textfield;
+  }
+
+  // .layout {
+  //   background-color: rgb(25, 201, 171);
+  //   min-height: 100vh;
+  // }
+
+  .h2 {
+    text-align: center;
+  }
+
+  .centro {
+    @include flex(column, auto, center, nowrap);
+    padding: 2%;
+  }
+
+  /* carousel */
+  .carousel {
+    max-width: 800px;
+  }
+
+  .linea {
+    color: rgb(127, 60, 136);
+    margin: 0 5%;
+  }
+
+  .centroTitulo {
+    text-align: center;
+    color: rgba(0, 0, 0, 0);
+  }
+
+  .calidadTuristica {
+    @include flex(column, auto, center, wrap);
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+   .listaServicios .lista_servicios {
+     display: flex;
+     flex-wrap: wrap;
+   }
+
+  .container {
+    background-color: var(--header-bg-color);
+    color: white;
+    padding: 2% 15%;
+    @include flex(column, auto, center, wrap);
+  }
+
+  .HabitacionesImages {
+    display: grid;
+    min-height: 70vh;
+    grid-template-rows: auto 1fr auto;
+  }
+
+  .Habitaciones_todas {
+    @include flex(column, center, auto, wrap);
+  }
+
+  .imagesHab {
+    height: auto;
+    width: auto;
+    max-height: 200px;
+    max-width: 300px;
+    border: 2px solid;
+
+  }
+
+  .card {
+    margin: 2%;
+    box-shadow: #0c0d1a;
+    background-color: transparent;
+    color: white;
+    border: solid 1px white;
+  }
+
+
+  .imagesHab1 {
+    position: relative;
+    top: auto;
+    left: auto;
+  }
+
+  .imagesHab2 {
+    position: relative;
+    top: auto;
+    left: auto;
+  }
+
+  .imagesHab3 {
+    position: relative;
+    top: auto;
+    left: auto;
+  }
+
+  .imagesHab4 {
+    position: relative;
+    top: auto;
+    left: auto;
+  }
+
+  /*------------------RESERVA-------------------------------*/
+  .cuadroReserva {
+    width: 80%;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  // .row{
+  //   @include flex(row, auto, center, wrap);
+  //   margin: 2;
+  //   padding: 8px;
+  // }
+
+  .mapa{
+    @include flex (column, auto, center, wrap);
+  }
+
+  /*--------------------------FORMULARIO DE CONTACTO--------------------------------*/
+  #formulario {
+    border: solid;
+    border-radius: 10px;
+    width: 600px;
+    padding: 30px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .tituloContacto {
+    text-align: center;
+  }
+
+  .container .formulario .datos {
+    margin-top: 20px;
+    background: #24303c;
+    color: rgb(70, 69, 69);
+    width: 100%;
+    padding: 25px;
+    border-radius: 4px;
+    border: 1px solid #b2c3e7;
+  }
+
+  .container .formulario p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 2%;
+  }
+
+  .container .formulario .imagen {
+    position: flex;
+  }
+
+  .container .formulario .imagen input {
+    background-color: #1f53c5;
+  }
+
+  .boton_enviar {
+    width: 100%;
+    background: #1f53c5;
+    color: rgb(141, 140, 140);
+    border: none;
+    padding: 12px;
+    margin: 16px 0;
+    font-size: 16px;
+    border-radius: 4px;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-rows: auto;
+		grid-template-columns: auto auto;
+
+    img {
+			border: solid 1px whitesmoke;
+			margin: 12px;
+			border-radius: 15px;
+			width: 90%;
+			height: 90%;
+		}
+  }
+
+}

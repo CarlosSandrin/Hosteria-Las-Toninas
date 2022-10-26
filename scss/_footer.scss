@@ -1,0 +1,26 @@
+footer {
+  overflow-x: hidden;
+    //width: 100vw;
+    text-align: center;
+    background-color: rgb(113, 182, 247);
+  
+    .logosRedSocial {
+      display: flex;
+      justify-content: center;
+  
+      img {
+        height: 40px;
+        margin: 0;
+        padding: 5px;
+        border-radius: 50%;
+        box-shadow: #24303c;
+        transform: scale (1.2);
+      }
+    }
+    .logoLogos {
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+    
+  }

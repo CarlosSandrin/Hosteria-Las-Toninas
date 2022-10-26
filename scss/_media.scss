@@ -1,0 +1,51 @@
+// Mobile 360-767
+// Tablet 768-991
+// Desktop 992 ->
+
+@media screen and (max-width: 767px) {
+    main {
+        .container {
+            padding: 0;
+
+            .listaServicios {
+                text-align: center;
+                justify-content: center;
+            }
+        }
+        .centroTitulo{
+            padding: 0;
+            text-align: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .centro{
+            padding: 0;
+            text-align: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .row{
+            align-items: center;
+        }
+        .mapa{
+            max-width: 200px;
+        }
+        
+        
+    }
+    body {
+        background-image: linear-gradient(180deg, #009efd 0%, #29d4eb 100%);
+    }
+}
+
+@media screen and (max-width: 991px) {
+    body{
+        background-image: linear-gradient(180deg, #009efd 0%, #29d4eb 100%);
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1500px) {
+    body{
+        background-image: linear-gradient(180deg, #009efd 0%, #29d4eb 100%);
+    }
+}

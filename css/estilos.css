@@ -1,0 +1,286 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lucida Sans', sans-serif;
+  font-size: 20px; }
+
+body {
+  position: relative;
+  margin: 0; }
+
+.video {
+  width: 100%;
+  min-height: 500px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-height: 100%;
+  transform: translateX(calc((100% - 100vw) / 2));
+  z-index: -2;
+  filter: brightness(75%);
+  background-color: rgba(0, 0, 0, 0.25);
+  color: #fff;
+  opacity: 5.0; }
+
+header {
+  display: flex;
+  margin: 0;
+  z-index: 1;
+  border: solid 1px white; }
+  header .logoLogos {
+    height: 55px;
+    width: auto;
+    transition: all 0.3s;
+    cursor: pointer;
+    margin-left: auto; }
+    header .logoLogos:hover {
+      transform: scale(1.2); }
+  .logoLogos header:hover {
+    transform: scale(1.2); }
+  header .navLinks {
+    list-style: none; }
+    header .navLinks li {
+      display: inline-block;
+      padding: 0 20px; }
+      header .navLinks li a:hover {
+        color: rgba(216, 16, 243, 0.904); }
+    header .navLinks:hover {
+      transform: scale 1.1; }
+    header .navLinks a {
+      font-size: 700;
+      color: beige;
+      text-decoration: none; }
+
+main {
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
+  color: white;
+  overflow-x: hidden;
+  /* sacar flechas del input number:*/
+  /* carousel */
+  /*------------------RESERVA-------------------------------*/
+  /*--------------------------FORMULARIO DE CONTACTO--------------------------------*/ }
+  main input[type=number]::-webkit-inner-spin-button,
+  main input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0; }
+  main input[type=number] {
+    -moz-appearance: textfield; }
+  main .h2 {
+    text-align: center; }
+  main .centro {
+    display: flex;
+    flex-direction: column;
+    justify-content: auto;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 2%; }
+  main .carousel {
+    max-width: 800px; }
+  main .linea {
+    color: #7f3c88;
+    margin: 0 5%; }
+  main .centroTitulo {
+    text-align: center;
+    color: rgba(0, 0, 0, 0); }
+  main .calidadTuristica {
+    display: flex;
+    flex-direction: column;
+    justify-content: auto;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px; }
+  main .listaServicios .lista_servicios {
+    display: flex;
+    flex-wrap: wrap; }
+  main .container {
+    background-color: var(--header-bg-color);
+    color: white;
+    padding: 2% 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: auto;
+    align-items: center;
+    flex-wrap: wrap; }
+  main .HabitacionesImages {
+    display: grid;
+    min-height: 70vh;
+    grid-template-rows: auto 1fr auto; }
+  main .Habitaciones_todas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: auto;
+    flex-wrap: wrap; }
+  main .imagesHab {
+    height: auto;
+    width: auto;
+    max-height: 200px;
+    max-width: 300px;
+    border: 2px solid; }
+  main .card {
+    margin: 2%;
+    box-shadow: #0c0d1a;
+    background-color: transparent;
+    color: white;
+    border: solid 1px white; }
+  main .imagesHab1 {
+    position: relative;
+    top: auto;
+    left: auto; }
+  main .imagesHab2 {
+    position: relative;
+    top: auto;
+    left: auto; }
+  main .imagesHab3 {
+    position: relative;
+    top: auto;
+    left: auto; }
+  main .imagesHab4 {
+    position: relative;
+    top: auto;
+    left: auto; }
+  main .cuadroReserva {
+    width: 80%;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; }
+  main .mapa {
+    display: flex;
+    flex-direction: column;
+    justify-content: auto;
+    align-items: center;
+    flex-wrap: wrap; }
+  main #formulario {
+    border: solid;
+    border-radius: 10px;
+    width: 600px;
+    padding: 30px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px; }
+  main .tituloContacto {
+    text-align: center; }
+  main .container .formulario .datos {
+    margin-top: 20px;
+    background: #24303c;
+    color: #464545;
+    width: 100%;
+    padding: 25px;
+    border-radius: 4px;
+    border: 1px solid #b2c3e7; }
+  main .container .formulario p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 2%; }
+  main .container .formulario .imagen {
+    position: flex; }
+  main .container .formulario .imagen input {
+    background-color: #1f53c5; }
+  main .boton_enviar {
+    width: 100%;
+    background: #1f53c5;
+    color: #8d8c8c;
+    border: none;
+    padding: 12px;
+    margin: 16px 0;
+    font-size: 16px;
+    border-radius: 4px; }
+  main .grid-container {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto auto; }
+    main .grid-container img {
+      border: solid 1px whitesmoke;
+      margin: 12px;
+      border-radius: 15px;
+      width: 90%;
+      height: 90%; }
+
+.wpp-fixed {
+  color: #71d47a;
+  border-radius: 50%;
+  width: 2em;
+  height: 2em;
+  position: fixed;
+  bottom: 3em;
+  right: 1em;
+  display: flex;
+  align-items: center; }
+
+@keyframes moverBoton {
+  0% {
+    transform: scale(1, 1); }
+  25% {
+    transform: scale(1.1, 1.1); }
+  50% {
+    transform: scale(1.2, 1.2); }
+  100% {
+    transform: scale(1, 1); } }
+
+.wpp-fixed:hover {
+  /* transform: scale(1.2, 1.2); */
+  animation-name: moverBoton;
+  animation-duration: 3s;
+  animation-delay: 0.5;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite; }
+
+/*-----------------------------------------------*/
+footer {
+  overflow-x: hidden;
+  text-align: center;
+  background-color: #71b6f7; }
+  footer .logosRedSocial {
+    display: flex;
+    justify-content: center; }
+    footer .logosRedSocial img {
+      height: 40px;
+      margin: 0;
+      padding: 5px;
+      border-radius: 50%;
+      box-shadow: #24303c;
+      transform: scale 1.2; }
+  footer .logoLogos:hover {
+    transform: scale(1.2); }
+
+@media screen and (max-width: 767px) {
+  main .container {
+    padding: 0; }
+    main .container .listaServicios {
+      text-align: center;
+      justify-content: center; }
+  main .centroTitulo {
+    padding: 0;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap; }
+  main .centro {
+    padding: 0;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap; }
+  main .row {
+    align-items: center; }
+  main .mapa {
+    max-width: 200px; }
+  body {
+    background-image: linear-gradient(180deg, #009efd 0%, #29d4eb 100%); } }
+
+@media screen and (min-width: 992px) and (max-width: 1500px) {
+  body {
+    background-image: linear-gradient(180deg, #009efd 0%, #29d4eb 100%); } }
+
+@media screen and (max-width: 991px) {
+  body {
+    background-image: linear-gradient(180deg, #009efd 0%, #29d4eb 100%); } }

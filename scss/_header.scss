@@ -1,0 +1,46 @@
+header {
+    display: flex;
+    //justify-content: space-between;
+    margin: 0;
+    z-index: 1;
+    border: solid 1px white;
+  
+    .logoLogos {
+      height: 55px;
+      width: auto;
+      transition: all 0.3s;
+      cursor: pointer;
+      margin-left: auto;
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+      .logoLogos &:hover {
+      transform: scale(1.2);
+    }
+  
+    .navLinks {
+      list-style: none;
+  
+      li {
+        display: inline-block;
+        padding: 0 20px;
+  
+        a {
+          &:hover {
+            color: rgba(216, 16, 243, 0.904);
+          }
+        }
+      }
+  
+      &:hover {
+        transform: scale (1.1);
+      }
+  
+      a {
+        font-size: 700;
+        color: beige;
+        text-decoration: none;
+      }
+    }
+  }
