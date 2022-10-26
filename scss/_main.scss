@@ -55,7 +55,7 @@ main {
    .listaServicios .lista_servicios {
      display: flex;
      flex-wrap: wrap;
-   }
+       }
 
   .container {
     background-color: var(--header-bg-color);
@@ -147,12 +147,6 @@ main {
     border: 1px solid #b2c3e7;
   }
 
-  // .row{
-  //   @include flex(row, auto, center, wrap);
-  //   margin: 2;
-  //   padding: 8px;
-  // }
-
   .mapa{
     @include flex (column, auto, center, wrap);
   }
@@ -201,6 +195,16 @@ main {
     width: 100%;
     background: #1f53c5;
     color: rgb(141, 140, 140);
+    border: none;
+    padding: 12px;
+    margin: 16px 0;
+    font-size: 16px;
+    border-radius: 4px;
+  }
+  .boton_reservar{
+    width: 100%;
+    background: #fafafa;
+    color: rgb(3, 3, 3);
     border: none;
     padding: 12px;
     margin: 16px 0;

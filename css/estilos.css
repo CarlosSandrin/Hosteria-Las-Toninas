@@ -208,6 +208,15 @@ main {
     margin: 16px 0;
     font-size: 16px;
     border-radius: 4px; }
+  main .boton_reservar {
+    width: 100%;
+    background: #fafafa;
+    color: #030303;
+    border: none;
+    padding: 12px;
+    margin: 16px 0;
+    font-size: 16px;
+    border-radius: 4px; }
   main .grid-container {
     display: grid;
     grid-template-rows: auto;
@@ -268,7 +277,12 @@ footer {
 
 @media screen and (max-width: 767px) {
   main .container {
-    padding: 0; }
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+    min-width: 100%;
+    text-align: justify; }
     main .container .listaServicios {
       text-align: center;
       justify-content: center; }
@@ -284,7 +298,7 @@ footer {
         width: 100%;
         padding: 25%; }
     main .container .mapa {
-      max-width: 60%;
+      max-width: 100%;
       margin: 5%; }
   main .centroTitulo {
     padding: 0;
@@ -298,9 +312,6 @@ footer {
     flex-wrap: wrap; }
   main .row {
     align-items: center; }
-  main .mapa {
-    max-width: 60%;
-    margin: 5%; }
   body {
     background-image: linear-gradient(180deg, #009efd 0%, #29d4eb 100%); } }
 
